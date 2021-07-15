@@ -3,7 +3,7 @@
 #include "stdafx.h"
 #include "FormMain.h"
 
-using namespace showenv;
+using namespace Ambiesoft::showenv;
 
 [STAThreadAttribute]
 int main(array<System::String ^> ^args)
