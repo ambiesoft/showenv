@@ -30,9 +30,14 @@ int main(array<System::String ^> ^args)
 		StringBuilder sb;
 		sb.AppendFormat(L"{0} v{1}", Application::ProductName, AmbLib::getAssemblyVersion(Assembly::GetExecutingAssembly(), 3));
 		sb.AppendLine();
+		sb.AppendLine();
 		sb.AppendLine(L"gitrev:");
-		sb.AppendLine( GITREV::GetHashMessage()
-		MessageBox::Show()
+		sb.AppendLine(AmbLib::toWindowsNewLine(gcnew String(GITREV::GetHashMessage().c_str())));
+		MessageBox::Show(sb.ToString(),
+			Application::ProductName,
+			MessageBoxButtons::OK,
+			MessageBoxIcon::Information);
+		return 0;
 	}
 	// Enabling Windows XP visual effects before any controls are created
 	Application::EnableVisualStyles();
