@@ -5,3 +5,5 @@ Debug/
 *.suo
 *.user
 *.aps
+showenv/gitrev
+showenv/gitrev.h

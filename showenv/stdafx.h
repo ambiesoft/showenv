@@ -7,3 +7,5 @@
 #include <Windows.h>
 
 #include <string>
+
+#define I18N(s) (s)
