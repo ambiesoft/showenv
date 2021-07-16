@@ -93,4 +93,12 @@
       <Filter>4 dist</Filter>
     </Text>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Filter>4 dist</Filter>
+    </None>
+    <None Include="..\README.md">
+      <Filter>4 dist</Filter>
+    </None>
+  </ItemGroup>
 </Project>
