@@ -10,7 +10,7 @@ targets:
   platform: Win32
 gitrev:
   gits:
-  - K:/local/PortableGit/bin/git.exe
+  - C:/local/PortableGit/bin/git.exe
   gitdirs:
   - "."
   - "../lsMisc"
