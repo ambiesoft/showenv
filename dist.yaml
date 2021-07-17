@@ -23,7 +23,22 @@ archivedir: C:/Linkout/
 remotedir: https://ambiesoft.com/ffdav/uploads/showenv/
 remotesha1: https://ambiesoft.com/ffdav/uploads/getSha1.php?file=showenv/{}
 TotalFileCount: exact
-ShouldBeFiles: []
+ShouldBeFiles: 
+- Ambiesoft.AmbLib.dll
+- Ambiesoft.AmbLib.pdb
+- Ambiesoft.AmbLibcpp.dll
+- Ambiesoft.AmbLibcpp.pdb
+- Ambiesoft.Profile.dll
+- Ambiesoft.Profile.pdb
+- credits.txt
+- FlexibleMessageBox.dll
+- FlexibleMessageBox.pdb
+- history.txt
+- LICENSE
+- README.md
+- showenv.exe
+- showenv.pdb
+TotalFileCount: 14
 ShouldNotBeFiles: []
 ShouldBeOneOfThem: []
 obtainverfrom: showenv/history.txt

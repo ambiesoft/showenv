@@ -1,6 +1,7 @@
 .vs/
 Release/
 Debug/
+build/
 *.ncb
 *.suo
 *.user
