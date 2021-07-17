@@ -101,6 +101,21 @@ namespace Ambiesoft {
 				MessageBoxIcon::Information);
 			
 		}
+		System::Void FormMain::tsmiCopy_Click(System::Object^ sender, System::EventArgs^ e)
+		{
+			try
+			{
+				txtEnvironment->Copy();
+			}
+			catch (Exception^ ex)
+			{
+				CppUtils::Alert(ex);
+			}
+		}
+		System::Void FormMain::tsmiSelectAll_Click(System::Object^ sender, System::EventArgs^ e)
+		{
+			txtEnvironment->SelectAll();
+		}
 
 	}
 }

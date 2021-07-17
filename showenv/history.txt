@@ -1,3 +1,7 @@
+2021/07/17 v1.0.1
+Fix Library for messagebox
+Add 'Edit' menus
+
 2021/07/15 v1.0.1
 Create this file
 
