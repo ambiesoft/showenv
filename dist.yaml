@@ -41,5 +41,5 @@ ShouldBeFiles:
 TotalFileCount: 14
 ShouldNotBeFiles: []
 ShouldBeOneOfThem: []
-obtainverfrom: showenv/history.txt
+obtainverfrom: history.txt
 obtainverregex: "\\d+\\.\\d+\\.\\d+"
