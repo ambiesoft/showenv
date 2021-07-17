@@ -10,8 +10,7 @@ targets:
   platform: Any CPU
 gitrev:
   gits:
-  - C:/cygwin/bin/git.exe
-  - C:/local/msys2/usr/bin/git.exe
+  - K:/local/PortableGit/bin/git.exe
   gitdirs:
   - "."
   - "../lsMisc"
