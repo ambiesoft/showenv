@@ -119,6 +119,7 @@ namespace Ambiesoft {
 				// txtEnvironment
 				// 
 				this->txtEnvironment->Dock = System::Windows::Forms::DockStyle::Fill;
+				this->txtEnvironment->HideSelection = false;
 				this->txtEnvironment->Location = System::Drawing::Point(3, 3);
 				this->txtEnvironment->Multiline = true;
 				this->txtEnvironment->Name = L"txtEnvironment";
@@ -134,7 +135,7 @@ namespace Ambiesoft {
 				this->tpCulture->Location = System::Drawing::Point(4, 24);
 				this->tpCulture->Name = L"tpCulture";
 				this->tpCulture->Padding = System::Windows::Forms::Padding(3);
-				this->tpCulture->Size = System::Drawing::Size(705, 476);
+				this->tpCulture->Size = System::Drawing::Size(503, 405);
 				this->tpCulture->TabIndex = 1;
 				this->tpCulture->Text = L"Culture";
 				this->tpCulture->UseVisualStyleBackColor = true;
@@ -146,7 +147,7 @@ namespace Ambiesoft {
 				this->txtCulture->Multiline = true;
 				this->txtCulture->Name = L"txtCulture";
 				this->txtCulture->ReadOnly = true;
-				this->txtCulture->Size = System::Drawing::Size(699, 470);
+				this->txtCulture->Size = System::Drawing::Size(497, 399);
 				this->txtCulture->TabIndex = 0;
 				this->txtCulture->WordWrap = false;
 				// 
@@ -178,20 +179,20 @@ namespace Ambiesoft {
 				this->tsmiCopy->ImageTransparentColor = System::Drawing::Color::Magenta;
 				this->tsmiCopy->Name = L"tsmiCopy";
 				this->tsmiCopy->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::C));
-				this->tsmiCopy->Size = System::Drawing::Size(180, 22);
+				this->tsmiCopy->Size = System::Drawing::Size(164, 22);
 				this->tsmiCopy->Text = L"&Copy";
 				this->tsmiCopy->Click += gcnew System::EventHandler(this, &FormMain::tsmiCopy_Click);
 				// 
 				// toolStripSeparator4
 				// 
 				this->toolStripSeparator4->Name = L"toolStripSeparator4";
-				this->toolStripSeparator4->Size = System::Drawing::Size(177, 6);
+				this->toolStripSeparator4->Size = System::Drawing::Size(161, 6);
 				// 
 				// tsmiSelectAll
 				// 
 				this->tsmiSelectAll->Name = L"tsmiSelectAll";
 				this->tsmiSelectAll->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::A));
-				this->tsmiSelectAll->Size = System::Drawing::Size(180, 22);
+				this->tsmiSelectAll->Size = System::Drawing::Size(164, 22);
 				this->tsmiSelectAll->Text = L"Select &All";
 				this->tsmiSelectAll->Click += gcnew System::EventHandler(this, &FormMain::tsmiSelectAll_Click);
 				// 
