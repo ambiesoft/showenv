@@ -7,7 +7,7 @@ configuration: Release
 targets:
 - setoutdirforbuild: true
   outdir: build/showenv
-  platform: Any CPU
+  platform: Win32
 gitrev:
   gits:
   - K:/local/PortableGit/bin/git.exe
