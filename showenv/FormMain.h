@@ -96,148 +96,105 @@ namespace Ambiesoft {
 				// 
 				// tab
 				// 
+				resources->ApplyResources(this->tab, L"tab");
 				this->tab->Controls->Add(this->tpEnvironment);
 				this->tab->Controls->Add(this->tpCulture);
-				this->tab->Dock = System::Windows::Forms::DockStyle::Fill;
-				this->tab->Location = System::Drawing::Point(0, 24);
 				this->tab->Name = L"tab";
 				this->tab->SelectedIndex = 0;
-				this->tab->Size = System::Drawing::Size(511, 433);
-				this->tab->TabIndex = 0;
 				// 
 				// tpEnvironment
 				// 
+				resources->ApplyResources(this->tpEnvironment, L"tpEnvironment");
 				this->tpEnvironment->Controls->Add(this->txtEnvironment);
-				this->tpEnvironment->Location = System::Drawing::Point(4, 24);
 				this->tpEnvironment->Name = L"tpEnvironment";
-				this->tpEnvironment->Padding = System::Windows::Forms::Padding(3);
-				this->tpEnvironment->Size = System::Drawing::Size(503, 405);
-				this->tpEnvironment->TabIndex = 0;
-				this->tpEnvironment->Text = L"Environment";
 				this->tpEnvironment->UseVisualStyleBackColor = true;
 				// 
 				// txtEnvironment
 				// 
-				this->txtEnvironment->Dock = System::Windows::Forms::DockStyle::Fill;
+				resources->ApplyResources(this->txtEnvironment, L"txtEnvironment");
 				this->txtEnvironment->HideSelection = false;
-				this->txtEnvironment->Location = System::Drawing::Point(3, 3);
-				this->txtEnvironment->Multiline = true;
 				this->txtEnvironment->Name = L"txtEnvironment";
 				this->txtEnvironment->ReadOnly = true;
-				this->txtEnvironment->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-				this->txtEnvironment->Size = System::Drawing::Size(497, 399);
-				this->txtEnvironment->TabIndex = 1;
-				this->txtEnvironment->WordWrap = false;
 				// 
 				// tpCulture
 				// 
+				resources->ApplyResources(this->tpCulture, L"tpCulture");
 				this->tpCulture->Controls->Add(this->txtCulture);
-				this->tpCulture->Location = System::Drawing::Point(4, 24);
 				this->tpCulture->Name = L"tpCulture";
-				this->tpCulture->Padding = System::Windows::Forms::Padding(3);
-				this->tpCulture->Size = System::Drawing::Size(503, 405);
-				this->tpCulture->TabIndex = 1;
-				this->tpCulture->Text = L"Culture";
 				this->tpCulture->UseVisualStyleBackColor = true;
 				// 
 				// txtCulture
 				// 
-				this->txtCulture->Dock = System::Windows::Forms::DockStyle::Fill;
-				this->txtCulture->Location = System::Drawing::Point(3, 3);
-				this->txtCulture->Multiline = true;
+				resources->ApplyResources(this->txtCulture, L"txtCulture");
 				this->txtCulture->Name = L"txtCulture";
 				this->txtCulture->ReadOnly = true;
-				this->txtCulture->Size = System::Drawing::Size(497, 399);
-				this->txtCulture->TabIndex = 0;
-				this->txtCulture->WordWrap = false;
 				// 
 				// msMain
 				// 
+				resources->ApplyResources(this->msMain, L"msMain");
 				this->msMain->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
 					this->tsmiEdit, this->tsmiSortByKey,
 						this->tsmiSortByValue, this->tsmiHelp
 				});
-				this->msMain->Location = System::Drawing::Point(0, 0);
 				this->msMain->Name = L"msMain";
-				this->msMain->Size = System::Drawing::Size(511, 24);
-				this->msMain->TabIndex = 1;
-				this->msMain->Text = L"menuStrip1";
 				// 
 				// tsmiEdit
 				// 
+				resources->ApplyResources(this->tsmiEdit, L"tsmiEdit");
 				this->tsmiEdit->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 					this->tsmiCopy, this->toolStripSeparator4,
 						this->tsmiSelectAll
 				});
 				this->tsmiEdit->Name = L"tsmiEdit";
-				this->tsmiEdit->Size = System::Drawing::Size(39, 20);
-				this->tsmiEdit->Text = L"&Edit";
 				// 
 				// tsmiCopy
 				// 
-				this->tsmiCopy->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"tsmiCopy.Image")));
-				this->tsmiCopy->ImageTransparentColor = System::Drawing::Color::Magenta;
+				resources->ApplyResources(this->tsmiCopy, L"tsmiCopy");
 				this->tsmiCopy->Name = L"tsmiCopy";
-				this->tsmiCopy->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::C));
-				this->tsmiCopy->Size = System::Drawing::Size(164, 22);
-				this->tsmiCopy->Text = L"&Copy";
 				this->tsmiCopy->Click += gcnew System::EventHandler(this, &FormMain::tsmiCopy_Click);
 				// 
 				// toolStripSeparator4
 				// 
+				resources->ApplyResources(this->toolStripSeparator4, L"toolStripSeparator4");
 				this->toolStripSeparator4->Name = L"toolStripSeparator4";
-				this->toolStripSeparator4->Size = System::Drawing::Size(161, 6);
 				// 
 				// tsmiSelectAll
 				// 
+				resources->ApplyResources(this->tsmiSelectAll, L"tsmiSelectAll");
 				this->tsmiSelectAll->Name = L"tsmiSelectAll";
-				this->tsmiSelectAll->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::A));
-				this->tsmiSelectAll->Size = System::Drawing::Size(164, 22);
-				this->tsmiSelectAll->Text = L"Select &All";
 				this->tsmiSelectAll->Click += gcnew System::EventHandler(this, &FormMain::tsmiSelectAll_Click);
 				// 
 				// tsmiSortByKey
 				// 
+				resources->ApplyResources(this->tsmiSortByKey, L"tsmiSortByKey");
 				this->tsmiSortByKey->Name = L"tsmiSortByKey";
-				this->tsmiSortByKey->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::S));
-				this->tsmiSortByKey->Size = System::Drawing::Size(78, 20);
-				this->tsmiSortByKey->Text = L"&Sort by Key";
 				this->tsmiSortByKey->Click += gcnew System::EventHandler(this, &FormMain::tsmiSortByKey_Click);
 				// 
 				// tsmiSortByValue
 				// 
+				resources->ApplyResources(this->tsmiSortByValue, L"tsmiSortByValue");
 				this->tsmiSortByValue->Name = L"tsmiSortByValue";
-				this->tsmiSortByValue->ShortcutKeys = static_cast<System::Windows::Forms::Keys>((System::Windows::Forms::Keys::Control | System::Windows::Forms::Keys::D));
-				this->tsmiSortByValue->Size = System::Drawing::Size(87, 20);
-				this->tsmiSortByValue->Text = L"Sort by &Value";
 				this->tsmiSortByValue->Click += gcnew System::EventHandler(this, &FormMain::tsmiSortByValue_Click);
 				// 
 				// tsmiHelp
 				// 
+				resources->ApplyResources(this->tsmiHelp, L"tsmiHelp");
 				this->tsmiHelp->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(1) { this->tsmiAbout });
 				this->tsmiHelp->Name = L"tsmiHelp";
-				this->tsmiHelp->Size = System::Drawing::Size(44, 20);
-				this->tsmiHelp->Text = L"&Help";
 				// 
 				// tsmiAbout
 				// 
+				resources->ApplyResources(this->tsmiAbout, L"tsmiAbout");
 				this->tsmiAbout->Name = L"tsmiAbout";
-				this->tsmiAbout->Size = System::Drawing::Size(107, 22);
-				this->tsmiAbout->Text = L"&About";
 				this->tsmiAbout->Click += gcnew System::EventHandler(this, &FormMain::tsmiAbout_Click);
 				// 
 				// FormMain
 				// 
-				this->AutoScaleDimensions = System::Drawing::SizeF(96, 96);
+				resources->ApplyResources(this, L"$this");
 				this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
-				this->ClientSize = System::Drawing::Size(511, 457);
 				this->Controls->Add(this->tab);
 				this->Controls->Add(this->msMain);
-				this->Font = (gcnew System::Drawing::Font(L"Meiryo UI", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-					static_cast<System::Byte>(0)));
-				this->MinimumSize = System::Drawing::Size(302, 193);
 				this->Name = L"FormMain";
-				this->Text = L"showenv";
 				this->Load += gcnew System::EventHandler(this, &FormMain::FormMain_Load);
 				this->tab->ResumeLayout(false);
 				this->tpEnvironment->ResumeLayout(false);
